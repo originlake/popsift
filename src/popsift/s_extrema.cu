@@ -47,7 +47,7 @@ __device__
 static
 inline void extremum_cmp( float val, float f, uint32_t& gt, uint32_t& lt, uint32_t mask )
 {
-    gt |= ( ( val > f ) ? mask : 0 );
+    // gt |= ( ( val > f ) ? mask : 0 );
     lt |= ( ( val < f ) ? mask : 0 );
 }
 
